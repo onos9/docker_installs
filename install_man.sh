@@ -236,7 +236,7 @@ startInstall()
         echo ""
 
         echo "- Docker Compose Version is now: " 
-        docker-compose --version
+        docker compose version
         echo ""
         echo ""
         sleep 3s
@@ -285,11 +285,11 @@ startInstall()
         echo ""
 
         if [[ "$OS" == "1" ]]; then
-          docker-compose up -d
+          docker compose up -d
         fi
 
         if [[ "$OS" != "1" ]]; then
-          sudo docker-compose up -d
+          sudo docker compose up -d
         fi
 
         echo ""
@@ -363,11 +363,11 @@ startInstall()
         echo ""
 
         if [[ "$OS" == "1" ]]; then
-          docker-compose up -d
+          docker compose up -d
         fi
 
         if [[ "$OS" != "1" ]]; then
-          sudo docker-compose up -d
+          sudo docker compose up -d
         fi
 
         echo ""
@@ -396,11 +396,11 @@ startInstall()
         echo ""
 
         if [[ "$OS" == "1" ]]; then
-          docker-compose up -d
+          docker compose up -d
         fi
 
         if [[ "$OS" != "1" ]]; then
-          sudo docker-compose up -d
+          sudo docker compose up -d
         fi
 
         echo ""
