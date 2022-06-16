@@ -31,12 +31,12 @@ installApps()
         echo ""
     fi
 
+    read -rp "Yatch (y/n): " YTCH
     read -rp "NGinX Proxy Manager (y/n): " NPM
     read -rp "Navidrome (y/n): " NAVID
     read -rp "Speedtest - recurring internet speedtest (y/n): " SPDTST
     read -rp "Portainer-CE (y/n): " PTAIN
-    read -rp "Yatch (y/n): " YTCH
-
+    
     if [[ "$PTAIN" == [yY] ]]; then
         echo ""
         echo ""
